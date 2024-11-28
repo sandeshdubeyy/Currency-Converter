@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(119, 3, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: white;
+    width: 360px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.calculator form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    font-size: 17px;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid rgb(119, 3, 196);
+}
+
+form .droplist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.droplist .selectbox {
+    display: flex;
+    width: 115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border: 1px solid #999;
+}
+
+.droplist select {
+    width: auto;
+}
+
+.selectbox select {
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+
+.selectbox img {
+    max-width: 25px;
+}
+
+.droplist .icon {
+    cursor: pointer;
+    font-size: 19px;
+    margin-top: 30px;
+}
+form .exchangerate{
+    font-size: 17px;
+    margin: 20px 0 30px 0;
+    font-weight: 550;
+}
+form button{
+    height: 52px;
+    color:#fff;
+    background: rgb(119, 3, 196);
+    cursor: pointer;
+    font-size: 17px
+}
